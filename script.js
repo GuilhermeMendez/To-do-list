@@ -45,6 +45,16 @@ function showValues(){
     }
 }
 
+document.addEventListener("keypress", function(e){
+    
+    if(e.key === "Enter") {
+
+        const btn = document.querySelector("#button-new-task")
+
+        btn.click();
+    }
+})
+
 function removeItem(data){
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
     let index = values.findIndex(x => x.name == data)
