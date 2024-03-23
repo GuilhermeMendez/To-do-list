@@ -7,12 +7,13 @@
     --color-green2: rgb(51, 149, 26);
     --color-red: rgb(184, 40, 35);
     --color-red2: rgb(146, 22, 17);
+    --color-pulple: rgb(120, 88, 117);
 }
 
 
 body{
     font-family: albert sans ;
-    background-color: #1b6bf5;
+    background-color: var(--color-pulple);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
